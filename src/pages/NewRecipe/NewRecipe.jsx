@@ -7,6 +7,7 @@ export default function NewRecipe() {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
+    const [success, setSuccess] = useState(false)
     const [form, setForm] = useState({
         name: '',
         difficulty: 'Easy',
@@ -32,7 +33,8 @@ export default function NewRecipe() {
                 ingredients: form.ingredients.split('\n'),
                 instructions: form.instructions.split('\n')
             })
-            navigate('/')
+            setSuccess(true)
+            setTimeout(() => navigate('/'), 3000)
         } catch (err) {
             setError(err.message)
             setLoading(false)
@@ -70,6 +72,9 @@ export default function NewRecipe() {
                     {loading ? 'Envoi...' : 'Créer la recette'}
                 </button>
             </form>
+              {success && (
+            <div className="toast">✅ Recette créée avec succès !</div>
+              )}
         </main>
     )
 }
