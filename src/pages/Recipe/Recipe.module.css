@@ -1,0 +1,53 @@
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+.page img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.page h3 {
+    font-size: 2rem;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.page button {
+    padding: 0.6rem 1.2rem;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.page button:hover {
+    background-color: #c1121f;
+}
+
+.page h2 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.8rem;
+    color: #333;
+}
+
+.page ul, .page ol {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.page li {
+    line-height: 1.6;
+}

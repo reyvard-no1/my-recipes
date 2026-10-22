@@ -1,0 +1,18 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+.page h1 {
+    font-size: 2rem;
+    color: #e63946;
+    margin-bottom: 1.5rem;
+}
+
+.page ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}

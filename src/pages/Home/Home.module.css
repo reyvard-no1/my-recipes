@@ -1,0 +1,58 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+.page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e63946;
+}
+
+.page p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.page form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.page form input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.page form input:focus {
+    border-color: #e63946;
+}
+
+.page form button {
+    padding: 0.6rem 1.2rem;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.page form button:hover {
+    background-color: #c1121f;
+}
+
+.page ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
